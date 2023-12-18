@@ -20,5 +20,9 @@ namespace VideoRentalProject.Controllers
            
             return View(Customers);
         }
+        public ActionResult Details(int id)
+        {
+            return View();
+        }
     }
 }
