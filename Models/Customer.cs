@@ -15,5 +15,7 @@ namespace VideoRentalProject.Models
         public bool IsSubsceibedToNewsletter { get; set; }
         public MembershipType MembershipType { get; set; }
         public byte MembershipTypeId { get; set; }
+
+        public DateTime? Birthday { get; set; }
     }
 }

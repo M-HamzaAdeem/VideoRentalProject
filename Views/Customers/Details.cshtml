@@ -4,4 +4,15 @@
 }
 
 <h2>@Model.Name </h2>
+<ul>
+    <li>
+        Membership Type: @Model.MembershipType.Name
+    </li>
+    @if(@Model.Birthday.HasValue)
+    {
+    <li>
+        Birthday: @Model.Birthday.Value.ToString("MMMM, dd, yyyy")
+    </li>
+    }
+</ul>
 

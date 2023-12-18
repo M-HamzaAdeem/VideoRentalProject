@@ -27,7 +27,7 @@ namespace VideoRentalProject.Controllers
         }
         public ActionResult Details(int id)
         {
-            var customer = _context.Customers.FirstOrDefault(c=>c.id ==id);
+            var customer = _context.Customers.Include(c => c.MembershipType).FirstOrDefault(c=>c.id ==id);
             return View(customer);
         }
     }

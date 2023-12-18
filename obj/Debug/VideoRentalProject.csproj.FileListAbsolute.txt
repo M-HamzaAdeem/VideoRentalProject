@@ -114,3 +114,8 @@ D:\Web Courses\Code With Mosh\The Complete ASP.NET MVC_5 Course_2018-4\Project\V
 D:\Web Courses\Code With Mosh\The Complete ASP.NET MVC_5 Course_2018-4\Project\VideoRentalProject\obj\Debug\VideoRentalProject.Migrations.ApplyAnnotationToCustomerName.resources
 D:\Web Courses\Code With Mosh\The Complete ASP.NET MVC_5 Course_2018-4\Project\VideoRentalProject\obj\Debug\VideoRentalProject.Migrations.AddNameToMembershipType.resources
 D:\Web Courses\Code With Mosh\The Complete ASP.NET MVC_5 Course_2018-4\Project\VideoRentalProject\obj\Debug\VideoRentalProject.Migrations.AddNameToExistingMemberships.resources
+D:\Web Courses\Code With Mosh\The Complete ASP.NET MVC_5 Course_2018-4\Project\VideoRentalProject\obj\Debug\VideoRentalProject.Migrations.AddBirthdayToCustomer.resources
+D:\Web Courses\Code With Mosh\The Complete ASP.NET MVC_5 Course_2018-4\Project\VideoRentalProject\obj\Debug\VideoRentalProject.Migrations.AddBirthdayToCustomeWithId1.resources
+D:\Web Courses\Code With Mosh\The Complete ASP.NET MVC_5 Course_2018-4\Project\VideoRentalProject\obj\Debug\VideoRentalProject.Migrations.AddMoviesDbSetWithGenres.resources
+D:\Web Courses\Code With Mosh\The Complete ASP.NET MVC_5 Course_2018-4\Project\VideoRentalProject\obj\Debug\VideoRentalProject.Migrations.AddGenreToMovie.resources
+D:\Web Courses\Code With Mosh\The Complete ASP.NET MVC_5 Course_2018-4\Project\VideoRentalProject\obj\Debug\VideoRentalProject.Migrations.AddGenreToGenreTable.resources

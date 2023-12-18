@@ -1,8 +1,10 @@
 ﻿using System.Data.Entity;
+using System.Diagnostics;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using VideoRentalProject.EntityConfigurations;
 
 namespace VideoRentalProject.Models
 {
@@ -21,7 +23,7 @@ namespace VideoRentalProject.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<Customer> Customers { get; set; }
-       // public DbSet<Movie> Movies { get; set; }
+        public DbSet<Movie> Movies { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
@@ -30,6 +32,13 @@ namespace VideoRentalProject.Models
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
+        }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Configurations.Add(new MovieConfig());
+
         }
     }
 }

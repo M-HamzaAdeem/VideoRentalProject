@@ -173,6 +173,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MoviesController.cs" />
+    <Compile Include="EntityConfigurations\MovieConfig.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -204,6 +205,26 @@
     <Compile Include="Migrations\202312181005289_AddNameToExistingMemberships.designer.cs">
       <DependentUpon>202312181005289_AddNameToExistingMemberships.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202312181046337_AddBirthdayToCustomer.cs" />
+    <Compile Include="Migrations\202312181046337_AddBirthdayToCustomer.designer.cs">
+      <DependentUpon>202312181046337_AddBirthdayToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312181054071_AddBirthdayToCustomeWithId1.cs" />
+    <Compile Include="Migrations\202312181054071_AddBirthdayToCustomeWithId1.designer.cs">
+      <DependentUpon>202312181054071_AddBirthdayToCustomeWithId1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312181649412_AddMoviesDbSetWithGenres.cs" />
+    <Compile Include="Migrations\202312181649412_AddMoviesDbSetWithGenres.designer.cs">
+      <DependentUpon>202312181649412_AddMoviesDbSetWithGenres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312181656137_AddGenreToMovie.cs" />
+    <Compile Include="Migrations\202312181656137_AddGenreToMovie.designer.cs">
+      <DependentUpon>202312181656137_AddGenreToMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312181725553_AddGenreToGenreTable.cs" />
+    <Compile Include="Migrations\202312181725553_AddGenreToGenreTable.designer.cs">
+      <DependentUpon>202312181725553_AddGenreToGenreTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -211,6 +232,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -288,6 +310,7 @@
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -340,6 +363,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202312181005289_AddNameToExistingMemberships.resx">
       <DependentUpon>202312181005289_AddNameToExistingMemberships.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312181046337_AddBirthdayToCustomer.resx">
+      <DependentUpon>202312181046337_AddBirthdayToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312181054071_AddBirthdayToCustomeWithId1.resx">
+      <DependentUpon>202312181054071_AddBirthdayToCustomeWithId1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312181649412_AddMoviesDbSetWithGenres.resx">
+      <DependentUpon>202312181649412_AddMoviesDbSetWithGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312181656137_AddGenreToMovie.resx">
+      <DependentUpon>202312181656137_AddGenreToMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312181725553_AddGenreToGenreTable.resx">
+      <DependentUpon>202312181725553_AddGenreToGenreTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
