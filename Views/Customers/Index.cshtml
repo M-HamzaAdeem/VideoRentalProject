@@ -4,17 +4,41 @@
 }
 
     <h2>Customers</h2>
-    <ul>
+    
         @if (Model.Count() == 0)
                 {
                     <p>
                         There is no customer in the List
                     </p>
                 }
-    </ul>
-        @foreach(var c in Model)
-                {
-                    <li> @Html.ActionLink(c.Name, "Details", "Customers", new { id = c.id },null)</li>
+<table class=" table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>
+                Customer
+            </th>
+            <th>
+                DiscountRate
+            </th>
+
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var c in Model)
+        {
+            <tr>
+                <td>
+                    @Html.ActionLink(c.Name, "Details", "Customers", new { id = c.id }, null)
+                </td>
+                <td>
+                    @c.MembershipType.Name
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+                           
                    
-                }
+                        
 

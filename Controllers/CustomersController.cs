@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -9,20 +10,25 @@ namespace VideoRentalProject.Controllers
 {
     public class CustomersController : Controller
     {
-        // GET: Customers
+        private ApplicationDbContext _context;
+        public CustomersController()
+        {
+            _context = new ApplicationDbContext();
+        }
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+        }
         public ActionResult Index()
         {
-            List<Customer> Customers = new List<Customer>()
-            {
-                new Customer() {id = 1, Name = "Ali Arif"},
-                new Customer() {id = 2, Name = "Irfan Ahmed"}
-            };
+            var customers = _context.Customers.Include(c=>c.MembershipType).ToList();
            
-            return View(Customers);
+            return View(customers);
         }
         public ActionResult Details(int id)
         {
-            return View();
+            var customer = _context.Customers.FirstOrDefault(c=>c.id ==id);
+            return View(customer);
         }
     }
 }
