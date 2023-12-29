@@ -119,3 +119,4 @@ D:\Web Courses\Code With Mosh\The Complete ASP.NET MVC_5 Course_2018-4\Project\V
 D:\Web Courses\Code With Mosh\The Complete ASP.NET MVC_5 Course_2018-4\Project\VideoRentalProject\obj\Debug\VideoRentalProject.Migrations.AddMoviesDbSetWithGenres.resources
 D:\Web Courses\Code With Mosh\The Complete ASP.NET MVC_5 Course_2018-4\Project\VideoRentalProject\obj\Debug\VideoRentalProject.Migrations.AddGenreToMovie.resources
 D:\Web Courses\Code With Mosh\The Complete ASP.NET MVC_5 Course_2018-4\Project\VideoRentalProject\obj\Debug\VideoRentalProject.Migrations.AddGenreToGenreTable.resources
+D:\Web Courses\Code With Mosh\The Complete ASP.NET MVC_5 Course_2018-4\Project\VideoRentalProject\obj\Debug\VideoRentalProject.Migrations.updateReleaseDateFormat.resources

@@ -30,7 +30,7 @@
         {
             <tr>
                 <td>
-                    @Html.ActionLink(c.Name, "Details", "Movies", new { id = c.id }, null)
+                    @Html.ActionLink(c.Name, "Edit", "Movies", new { id = c.Id }, null)
                 </td>
                 <td>
                     @String.Join(", ", c.Genre.Select(g => g.Name))
@@ -39,8 +39,9 @@
             </tr>
         }
     </tbody>
+
 </table>
 
-
+@Html.ActionLink("Add Movie", "New", "Movies", new { @class = "btn btn-primary" })
 
 
